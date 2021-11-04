@@ -11,7 +11,7 @@ body{
     border-radius: 25px;
 	padding:  5%;
 	width: 70%;
-    height: 350px;
+    height: 300px;
     margin: auto;
     align-items: center; 
     display: flex;
@@ -23,7 +23,7 @@ body{
     /* border: 8px solid #a9508b;    */
     border-radius: 25px;
       
-    width: 80%;
+    width: 90%;
     margin: auto;
     align-items: center;	
     display: flex;
