@@ -1,6 +1,6 @@
 const body = document.querySelector('.container');
 const output = document.querySelector('.result')
-const button = document.querySelector('.guess');
+const button = document.querySelector('.button');
 const rgb = document.querySelector(".rgb");
 const hex = document.querySelector(".hex");
 
@@ -21,3 +21,21 @@ hex.addEventListener('click', (e)=>{
 		output.innerHTML = `Background-Color : ${hexColor()}`;
 	})
 })
+
+let hourEl = document.querySelector(".hour");
+let minuteEl = document.querySelector(".minute");
+let clockEl = document.querySelector(".clock");
+let secondEl = document.querySelector(".second");
+
+let time = () =>{
+    let currenTime = new Date();
+    let currentHour = currenTime.getHours();
+    let currentMinute = currenTime.getMinutes()
+    let currentSecond = currenTime.getSeconds()
+    ;
+    secondEl.textContent = currentSecond.toString().padStart(2,"0")
+    hourEl.textContent = currentHour.toString().padStart(2,"0");
+    minuteEl.textContent = currentMinute.toString().padStart(2,"0")
+}
+setInterval(time, 1000);
+

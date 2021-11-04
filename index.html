@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Flipper</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
 </head>
 <body> 
     <header class="header">
         <nav class="navbar">
-            <div class="h1"><h1><span style="font-size: 30px;color: #a9508b;">Yamanway</span> Color Flipper</h1></div>
+            <div class="h1">
+                <h1><span style="font-size: 30px;color: #a9508b;">Yamanway</span> Color Flipper</h1></div>
+            </div>
+            <div>
+                <h2 class="clock"><span class="hour"></span>.<span class="minute"></span>.<span class="second"></span>  <i class="far fa-clock"></i></h2>
+            </div>
             <div>
             <a class="rgb" href="#">RGB</a>
             <a class="hex" href="#">HEX</a></div>            
@@ -18,7 +24,7 @@
     </header>
     <div class="container"> 
         <div class="center">  
-            <p><button class="guess">Dont Click More</button></p>      
+            <button class="button">Dont Click More</button>      
             <output class="result"></output>
         </div>
    
